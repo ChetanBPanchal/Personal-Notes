@@ -1,0 +1,30 @@
+<div class="center" style="margin-top: 10px;margin-left: 10px;">
+<div class="row" >
+    <div class="col-6">
+        <h2>All Personal Notes</h2>
+    </div>
+    <div class="col-3 marginbox">
+        <center>
+        <a class="button button2" href="/notes/create">Add New Notes</a>
+        </center>
+    </div>
+</div>
+
+<section class="row">
+    {{#each allNotes}}
+    <div class="card col-3 m-2">
+            <div class="card-body text-center box-shadow">
+                <h5 class="card-title">{{this.title}}</h5>
+                <hr>
+                <p> Subject: {{this.subject}}</p>
+                <p> Details: {{this.note_description}}</p>
+                <div>
+                    <a href="notes/edit/{{this._id}}">Edit</a> | 
+                    <a href="notes/delete/{{this._id}}" class="text-danger" 
+                    onclick="return ConfirmDialog()">Delete</a>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</section>
+</div>
