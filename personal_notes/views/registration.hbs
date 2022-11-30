@@ -1,21 +1,32 @@
-
 <div class="card">
-
-<h1>Registration</h1>
-
-<form method="post">
-    <fieldset>
-        <label for="username">User Name:*</label>
-        <input name="username" id="username" required/>
-        <br/><br/>
-        <label for="email">Email:*</label>
-        <input name="email" id="email" required/>
-        <br/><br/>
-        <label for="password">Password:*</label>
-        <input name="password" id="password" required/>
-        <br/><br/>
-        
-        <button>Save</button>
-    </fieldset>
-</form>
+    <div class="container">
+        <form method="post">
+            <div class="row">
+                <div class="col-6 center">
+                    <h1>Registration</h1>
+                </div>
+            </div>
+            <fieldset>
+                <div class="row">
+                    <div class="col-3"><label for="username">User Name:*</label></div>
+                    <div class="col-3"><input name="username" id="username" required /></div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-3"><label for="email">Email:*</label></div>
+                    <div class="col-3"><input name="email" id="email" required /></div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-3"><label for="password">Password:*</label></div>
+                    <div class="col-3"><input name="password" id="password" required /></div>
+                </div>
+                <br>
+                Already User? <a href="/login">Login from User</a>
+                <br>
+                <button>Save</button>
+            </fieldset>
+        </form>
+    </div>
+</div>
 </div>

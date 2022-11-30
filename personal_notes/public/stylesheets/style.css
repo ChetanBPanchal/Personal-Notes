@@ -14,13 +14,20 @@ body {
 }
 
 .index-card{
-  margin-top: 20px;
+  padding: 20px;
+  margin: 20px;
   min-height: 300px;
   width: 70%;
 }
 
 .font-title{
   font-size: 24px;
+}
+
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
 }
 
 .marginbox{
